@@ -1,0 +1,36 @@
+{
+  "name": "Aaron Tan Yee Sing",
+  "position": "Front-End Developer",
+  "avatar": "https://media.licdn.com/dms/image/D5603AQF9uAZAzZSRHw/profile-displayphoto-shrink_800_800/0/1664780321247?e=1687392000&v=beta&t=h9PXNCGmQpXPX1_dhsOi9YDohYOeo1IWfdAzG-mN6o4",
+  "links": [
+    {
+      "title": "My Personal Site (Coming Soon!)",
+      "href": "https://atys.dev",
+      "image": "https://media.licdn.com/dms/image/D5603AQF9uAZAzZSRHw/profile-displayphoto-shrink_800_800/0/1664780321247?e=1687392000&v=beta&t=h9PXNCGmQpXPX1_dhsOi9YDohYOeo1IWfdAzG-mN6o4"
+    },
+    {
+      "title": "Unity VR Escape Room Game project",
+      "href": "https://www.youtube.com/watch?v=iauPzI0Uf3M&t=71s"
+    },
+    {
+      "title":"My Dream Watch",
+      "href":"https://www.vacheron-constantin.com/ww/en/collections/overseas/4500v-110r-b705.html",
+      "image":"https://monochrome-watches.com/wp-content/uploads/2020/09/Vacheron-Constantin-Overseas-Self-Winding-4500V-Pink-Gold-Blue-Dial-2020-7-2048x2048.jpg"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "href": "https://twitter.com/aarontanyeesing"
+    },
+    {
+      "title": "Github",
+      "href": "https://github.com/aaron1999x"
+    },
+    {
+      "title":"Instagram",
+      "href":"https://www.instagram.com/aaron1999x/"
+    }
+  
+  ]
+}
