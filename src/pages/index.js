@@ -5,12 +5,13 @@ import {FaTwitter, FaGithub, FaFacebook , FaInstagram} from 'react-icons/fa';
 import {CiShare1} from 'react-icons/ci'
 import Modal from "@/components/Modal";
 import QRCode from "react-qr-code";
+import whatsapp from "../images/WhatsAppButtonGreenMedium.svg"
 
 function LinkCard({href,title,image}) {
   return(
     <a href={href} className='flex items-center p-1 w-full rounded-md hover:scale-105 transition-all border border-gray-300 mb-3 bg-gray-100 max-w-3xl ' >
       <div className='flex items-center text-center w-full'>
-        <div className='w-10 h-10'>
+        <div className='h-10 flex items-center'>
           {image &&(
             <Image className='rounded-sm'
               src={image}
@@ -86,10 +87,14 @@ export default function Home() {
           <QRCode
             size={256}
             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-            value={"https://linktree-aaron.vercel.app/"}
+            value={"https://aaron-linktree.vercel.app/"}
             viewBox={`0 0 256 256`}
           />
         </Modal>
+
+        <div className="mt-5 flex justify-end items-center">
+          <a aria-label="Chat on WhatsApp" href="https://wa.me/+60149810427"> <Image alt="Chat on WhatsApp" src={whatsapp} /></a>
+        </div>
 
       </div>
     </>
