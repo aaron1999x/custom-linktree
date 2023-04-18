@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import CopyUrlButton from "./CopyUrlButton";
 
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
@@ -9,7 +10,11 @@ const Modal = ({ isOpen, onClose, children }) => {
       <div className="absolute inset-0 bg-gray-900 opacity-75"></div>
       <div className="bg-white rounded-lg p-6 max-w-md mx-auto z-20">
         <div className="flex justify-between">
-          <h1 className="text-black text-xl font-bold">Share</h1>
+          <div className="flex gap-3 items-center">
+            <h1 className="text-black text-xl font-bold">Share</h1>
+            <CopyUrlButton />
+          </div>
+          
           <button
             className="text-gray-500 hover:text-gray-700"
             onClick={onClose}
@@ -18,6 +23,7 @@ const Modal = ({ isOpen, onClose, children }) => {
           </button>
         </div>
         <div className="mt-4">{children}</div>
+        
       </div>
     </div>
   );
