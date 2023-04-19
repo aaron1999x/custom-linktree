@@ -50,7 +50,7 @@ export default function Home() {
           <CiShare1 size={25} color={"#9ffd32"}/>
         </a>
       </div>
-      <div className='flex flex-col items-center justify-center mx-auto w-full mt-12 md:mt-16 px-8'>
+      <div className='flex flex-col items-center justify-center mx-auto w-full mt-10 md:mt-12 px-8'>
         <Image className='rounded-full'
           src={data.avatar}
           width={96}
