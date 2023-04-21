@@ -1,7 +1,7 @@
 import Image from "next/image"
 import data from '../../data.json'
 import React from "react";
-import {FaTwitter, FaGithub, FaFacebook , FaInstagram} from 'react-icons/fa';
+import {FaTwitter, FaGithub, FaFacebook , FaInstagram, FaLinkedin} from 'react-icons/fa';
 import {CiShare1} from 'react-icons/ci'
 import Modal from "@/components/Modal";
 import QRCode from "react-qr-code";
@@ -26,7 +26,6 @@ function LinkCard({href,title,image}) {
     </a>
   )
 }
-
 
 export default function Home() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -79,6 +78,7 @@ export default function Home() {
               {link.href.includes('github') ?<FaGithub className='hover:scale-110' size={35} /> : null}
               {link.href.includes('instagram') ?<FaInstagram className='hover:scale-110' size={35} /> : null}
               {link.href.includes('facebook') ?<FaFacebook className='hover:scale-110' size={35} /> : null}
+              {link.href.includes('linkedin') ?<FaLinkedin className='hover:scale-110' size={35} /> : null}
             </a>
           ))}
         </div>
