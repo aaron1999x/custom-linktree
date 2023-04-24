@@ -5,6 +5,7 @@ import {FaTwitter, FaGithub, FaFacebook , FaInstagram, FaLinkedin} from 'react-i
 import {CiShare1} from 'react-icons/ci'
 import Modal from "@/components/Modal";
 import QRCode from "react-qr-code";
+import Link from "next/link";
 import whatsapp from "../images/WhatsAppButtonGreenMedium.svg"
 
 function LinkCard({href,title,image}) {
@@ -95,8 +96,13 @@ export default function Home() {
         <div className="mt-5 flex justify-end items-center">
           <a aria-label="Chat on WhatsApp" href="https://wa.me/+60149810427"> <Image alt="Chat on WhatsApp" src={whatsapp} /></a>
         </div>
-
       </div>
+      <footer className="w-full text-sm absolute bottom-0 py-5">
+            <div className="flex items-center justify-center">
+            Build With <span className='text-primary text-2xl px-1'>&#9825;</span> by&nbsp;<Link href="
+            mailto:aarontys1999@gmail.com" className='underline underline-offset-2'>Aaron</Link>
+            </div>
+      </footer>
     </>
   )
 }
