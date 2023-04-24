@@ -97,7 +97,7 @@ export default function Home() {
           <a aria-label="Chat on WhatsApp" href="https://wa.me/+60149810427"> <Image alt="Chat on WhatsApp" src={whatsapp} /></a>
         </div>
       </div>
-      <footer className="w-full text-sm absolute bottom-0 py-5">
+      <footer className="w-full text-sm relative xl:absolute bottom-0 py-5">
             <div className="flex items-center justify-center">
             Build With <span className='text-primary text-2xl px-1'>&#9825;</span> by&nbsp;<Link href="
             mailto:aarontys1999@gmail.com" className='underline underline-offset-2'>Aaron</Link>
