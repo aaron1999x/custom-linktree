@@ -10,9 +10,9 @@ import whatsapp from "../images/WhatsAppButtonGreenMedium.svg"
 
 function LinkCard({href,title,image}) {
   return(
-    <a href={href} className='flex items-center p-1 w-full rounded-md hover:scale-105 transition-all border border-gray-300 mb-3 bg-gray-100 max-w-3xl'>
-      <div className='flex items-center text-center w-full'>
-        <div className='h-10 flex items-center'>
+    <a href={href} className='flex items-center p-3 md:p-2 w-full rounded-md hover:scale-105 transition-all border border-gray-300 mb-3 bg-gray-100 max-w-3xl'>
+      <div className='flex items-center text-center w-full relative'>
+        <div className='h-10 flex items-center absolute left-0'>
           {image &&(
             <Image className='rounded-sm'
               src={image}
@@ -22,7 +22,7 @@ function LinkCard({href,title,image}) {
             />
           )}
         </div>
-        <h2 className=' flex justify-center font-semibold text-gray-800 w-full -ml-10 text-sm md:text-lg ' >{title}</h2>
+        <h2 className=' flex justify-center font-semibold text-gray-800 w-full text-sm md:text-lg ' >{title}</h2>
       </div>
     </a>
   )
