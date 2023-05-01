@@ -12,7 +12,7 @@ function LinkCard({href,title,image}) {
   return(
     <a href={href} className='flex items-center p-3 md:p-2 w-full rounded-md hover:scale-105 transition-all border border-gray-300 mb-3 bg-gray-100 max-w-3xl'>
       <div className='flex items-center text-center w-full relative'>
-        <div className='h-10 flex items-center absolute left-0'>
+        <div className='h-10 flex items-center absolute md:left-0 -left-2'>
           {image &&(
             <Image className='rounded-sm'
               src={image}
