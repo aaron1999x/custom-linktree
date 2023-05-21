@@ -100,7 +100,7 @@ export default function Home() {
       <footer className="w-full text-sm relative xl:absolute bottom-0 py-5">
             <div className="flex items-center justify-center">
               <p>
-                Built by <a href="mailto:aarontys1999@gmail.com" className="font-medium underline underline-offset-2">Aaron</a>. Hosted on <a href="https://vercel.com/" target="_blank" className="font-medium underline underline-offset-2">Vercel</a>.
+                Built by <a target="_blank" href="https://atys.dev/" className="font-medium underline underline-offset-2">Aaron</a>. Hosted on <a href="https://vercel.com/" target="_blank" className="font-medium underline underline-offset-2">Vercel</a>.
               </p>
             </div>
       </footer>
