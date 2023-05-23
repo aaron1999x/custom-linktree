@@ -8,6 +8,7 @@ import QRCode from "react-qr-code";
 import Link from "next/link";
 import whatsapp from "../images/WhatsAppButtonGreenMedium.svg"
 import MetaHead from "@/components/MetaHead";
+import Script from "next/script";
 
 function LinkCard({href,title,image}) {
   return(
