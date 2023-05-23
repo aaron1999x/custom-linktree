@@ -7,6 +7,7 @@ import Modal from "@/components/Modal";
 import QRCode from "react-qr-code";
 import Link from "next/link";
 import whatsapp from "../images/WhatsAppButtonGreenMedium.svg"
+import MetaHead from "@/components/MetaHead";
 
 function LinkCard({href,title,image}) {
   return(
@@ -40,12 +41,21 @@ export default function Home() {
 
   return (
     <>
+      <MetaHead />
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-61PT7BRTKC'
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-61PT7BRTKC');
+        `}
+      </Script>
       <div className=' flex justify-end items-center mt-4 mx-2'>
-        {/* <label className="relative inline-flex cursor-pointer">
-          <input type="checkbox" value="" className="sr-only peer"></input>
-          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-          <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
-        </label> */}
         <a className=" py-2 px-4" onClick={openModal}>
           <CiShare1 size={25} color={"#9ffd32"}/>
         </a>
@@ -98,11 +108,11 @@ export default function Home() {
         </div>
       </div>
       <footer className="w-full text-sm relative xl:absolute bottom-0 py-5">
-            <div className="flex items-center justify-center">
-              <p>
-                Built by <a target="_blank" href="https://atys.dev/" className="font-medium underline underline-offset-2">Aaron</a>. Hosted on <a href="https://vercel.com/" target="_blank" className="font-medium underline underline-offset-2">Vercel</a>.
-              </p>
-            </div>
+        <div className="flex items-center justify-center">
+          <p>
+            Built by <a target="_blank" href="https://atys.dev/" className="font-medium underline underline-offset-2">Aaron</a>. Hosted on <a href="https://vercel.com/" target="_blank" className="font-medium underline underline-offset-2">Vercel</a>.
+          </p>
+        </div>
       </footer>
     </>
   )
